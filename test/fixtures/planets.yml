@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  facts: MyString
+  occupancy: 1
+  sights: MyString
+  travel_allowed: false
+
+two:
+  name: MyString
+  facts: MyString
+  occupancy: 1
+  sights: MyString
+  travel_allowed: false
