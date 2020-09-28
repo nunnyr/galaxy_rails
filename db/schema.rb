@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_09_25_225953) do
 
   create_table "planets", force: :cascade do |t|
     t.string "name"
+    t.string "image"
     t.string "facts"
     t.integer "occupancy"
     t.string "sights"
