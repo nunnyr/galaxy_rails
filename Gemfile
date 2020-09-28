@@ -27,6 +27,9 @@ gem 'rack-cors'
 gem 'faker'
 gem 'activerecord-reset-pk-sequence'
 
+gem 'bootstrap', '~> 5.0.0.alpha1'
+gem 'sprockets', '~>3.0'
+gem 'pry'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 2020_09_25_225953) do
     t.date "date"
     t.integer "price"
     t.bigint "user_id", null: false
-    t.integer "departing_planet_id"
-    t.integer "destination_planet_id"
+    t.integer "depart_planet_id"
+    t.integer "arrival_planet_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_trips_on_user_id"
