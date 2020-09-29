@@ -16,8 +16,8 @@ Planet.reset_pk_sequence
 
 
 ### USERS
-waverley = User.create!(first_name:"Waverley", last_name:"Leung", age:100, email: "wavey@gmail.com", friendly_neighbor: true)
-nunny = User.create!(first_name:"Nunny", last_name:"Reyes", age:101, email: "nunny@gmail.com", friendly_neighbor: true)
+waverley = User.create!(pronouns: "She/Her/Hers", first_name:"Waverley", last_name:"Leung", age:100, email: "wavey@gmail.com", friendly_neighbor: true)
+nunny = User.create!(pronouns: "She/Her/Hers", first_name:"Nunny", last_name:"Reyes", age:101, email: "nunny@gmail.com", friendly_neighbor: true)
 
 #### PLANETS
 mercury = Planet.create(name: "Mercury", image: "images-assets.nasa.gov/image/GSFC_20171208_Archive_e001545/GSFC_20171208_Archive_e001545~orig.png", facts: "Mercury is the smallest planet in our solar system—only slightly larger than Earth's Moon.", occupancy: Faker::Number.between(from: 200, to: 500), sights: "Mars Rover", travel_allowed: true)
