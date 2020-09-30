@@ -14,7 +14,7 @@ class TripsController < ApplicationController
         # new_arrival_planet = params[:arrival_planet_id]
         
         @trip = Trip.create(trip_params)
-        byebug
+        # byebug
         render json: @trip
     end
 
@@ -27,11 +27,15 @@ class TripsController < ApplicationController
 
         new_date = params[:date]
         new_price = 0
-        new_user = params[:user][:id]
+        # byebug
+        new_user_id = params[:user][:id]
+        # [:id]
         new_depart_planet = params[:depart_planet_id]
         new_arrival_planet = params[:arrival_planet_id]
 
-        Trip.create(date: new_date, price: new_price, user: new_user, depart_planet_id: new_depart_planet, arrival_planet_id:new_arrival_planet)
+        testTrip = Trip.create!(date: new_date, price: new_price, user_id: new_user_id, depart_planet_id: new_depart_planet, arrival_planet_id:new_arrival_planet)
+
+        byebug
 
         params.permit(:date, :price, :user, :depart_planet_id, :arrival_planet_id)
 
