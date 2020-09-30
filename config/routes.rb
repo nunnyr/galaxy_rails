@@ -9,6 +9,6 @@ Rails.application.routes.draw do
 
 
   get '/trips', to: 'trips#index'
-  post '/trip', to: 'trips#create'
+  post '/trips', to: 'trips#create'
 
 end
