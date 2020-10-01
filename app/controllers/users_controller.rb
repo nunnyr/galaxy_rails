@@ -15,8 +15,7 @@ class UsersController < ApplicationController
         # end
     end
 
-    # def update
-    # end
+    
 
     def login
         @found_user = User.find_by(email: params[:theUserNameFromFrontEnd])
