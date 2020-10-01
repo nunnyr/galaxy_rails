@@ -40,6 +40,8 @@ pluto = Planet.create!(name: "Pluto", image: "https://images-assets.nasa.gov/ima
 mercury = Planet.create(name: "Mercury", image: "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001545/GSFC_20171208_Archive_e001545~orig.png", facts: "Mercury is the smallest planet in our solar system—only slightly larger than Earth's Moon.", occupancy: Faker::Number.between(from: 200, to: 500), sights: "Mars Rover", travel_allowed: true)
 ### TRIPS
 trip_one = Trip.create!(date: DateTime.new(2100, 6, 22), price: 5000, user: waverley, depart_planet_id: mars.id, arrival_planet_id: venus.id)
+trip_two = Trip.create!(date: DateTime.new(2020, 10, 31), price: 5000, user: waverley, depart_planet_id: jupiter.id, arrival_planet_id: saturn.id)
+trip_three = Trip.create!(date: DateTime.new(2050, 11, 10), price: 5000, user: waverley, depart_planet_id: earth.id, arrival_planet_id: pluto.id)
 
 puts "🌎🪐🌕🌎🪐🌕🌎🪐🌕🌎🪐🌕"
 
